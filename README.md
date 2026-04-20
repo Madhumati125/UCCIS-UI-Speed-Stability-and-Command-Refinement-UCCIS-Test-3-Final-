@@ -1,6 +1,4 @@
-# UCCIS-UI-Speed-Stability-and-Command-Refinement-UCCIS-Test-3-Final
-# UCCIS Dashboard
-
+# UCCIS-UI-Speed-Stability-and-Command-Refinement-UCCIS-Test-3-Final UCCIS Dashboard
 ## Project Description
 
 This project is a simple dashboard system for monitoring civic issues like waste management, water problems, and emergencies. The main goal was to create a clean and stable interface where users can view alerts and understand their status easily.

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>UCCIS Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>UCCIS Dashboard</h1>
+
+    <div class="controls">
+      <button onclick="loadAlerts('waste')">Waste</button>
+      <button onclick="loadAlerts('water')">Water</button>
+      <button onclick="loadAlerts('emergency')">Emergency</button>
+    </div>
+
+    <input id="search" placeholder="Search..." onkeyup="filterData()" />
+
+    <div id="data"></div>
+
+    <!-- Chart -->
+    <canvas id="chart" width="400" height="200"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

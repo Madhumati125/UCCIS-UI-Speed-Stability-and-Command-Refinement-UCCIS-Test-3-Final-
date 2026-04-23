@@ -1,106 +1,155 @@
-# UCCIS-UI-Speed-Stability-and-Command-Refinement-UCCIS-Test-3-Final UCCIS Dashboard
+# UCCIS Dashboard
+
 ## Project Description
 
-This project is a simple dashboard system for monitoring civic issues like waste management, water problems, and emergencies. The main goal was to create a clean and stable interface where users can view alerts and understand their status easily.
+This project is a dashboard system for monitoring civic issues such as waste management, water problems, and emergencies.
 
-Instead of adding too many complex features, I focused on making the system work properly without errors and keeping the UI clear and user-friendly.
+The focus of this system is:
+- Stability
+- Clear UI
+- Proper frontend-backend communication
+- Structured data flow
+
+The system is designed to be simple, functional, and easy to review.
 
 ---
 
 ## Features
 
-* Filter alerts by category (Waste, Water, Emergency)
-* Display alerts in card format
-* Show status (High, Medium, Low, Critical)
-* Search alerts by title
-* Dynamic chart based on selected category
-* Auto refresh to simulate real-time updates
+- Filter alerts by category (Waste, Water, Emergency)
+- Display alerts in card format
+- Show status (High, Medium, Low, Critical)
+- Search alerts by title
+- Dynamic chart based on selected category
+- Auto refresh to simulate real-time updates
 
 ---
 
 ## Technologies Used
 
 Frontend:
-
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript
 
 Backend:
-
-* Node.js
-* Express.js
+- Node.js
+- Express.js
 
 Other:
+- Chart.js (data visualization)
+- JSON (data storage)
 
-* Chart.js for visualization
-* JSON file for storing data
+---
+
+## System Entry Points
+
+Frontend:
+- `index.html`
+
+Backend:
+- `server.js`
 
 ---
 
 ## How It Works
 
-1. The frontend sends a request to the backend API.
-2. The backend reads data from the alerts.json file.
-3. Data is sent back to the frontend.
-4. The UI displays the alerts as cards.
-5. The chart updates based on selected category and filtered data.
+1. User opens the dashboard (index.html)
+2. Frontend (script.js) sends API request
+3. Backend (server.js) processes request
+4. Data is read from alerts.json
+5. JSON response is returned
+6. UI updates with cards and chart
+
+Flow:
+Frontend → API → Backend → JSON → UI
 
 ---
 
 ## Project Structure
-
-```id="b0e9n4"
 UCCIS/
 │
 ├── backend/
-│   ├── server.js
-│   └── alerts.json
+│ ├── server.js
+│ └── alerts.json
 │
 ├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-```
-
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
+│
+├── review_packets/
+│ ├── submission_1.md
+│ ├── submission_2.md
+│ ├── submission_3.md
 ---
 
 ## How to Run
 
-1. Start backend:
+1. Start Backend
 
-```bash id="1kq7h2"
+
 cd backend
 node server.js
-```
 
-2. Open frontend:
 
-* Run index.html using Live Server
+2. Run Frontend
+
+- Open `index.html` using Live Server
 
 ---
 
 ## Challenges Faced
 
-* Initially, the chart was not displaying because data was not loading properly from the backend.
-* Fixed API connection issues (localhost and port handling)
-* Adjusted UI layout so cards don’t hide the chart
+- API connection issues (port mismatch)
+- Chart not rendering due to missing data
+- UI overlap between cards and chart
 
 ---
 
 ## Improvements Made
 
-* Changed layout from flex to grid for better spacing
-* Reduced card size to improve visibility
-* Added status-based colors for better clarity
-* Optimized UI to avoid scrolling issues
+- Grid layout for better structure
+- Status-based color coding
+- Reduced card size
+- Improved UI clarity
+- Fixed API data flow issues
+
+---
+
+## Submission Protocol (MANDATORY)
+
+Every submission must include:
+
+- `review_packets/` folder
+- Latest review packet file (submission_3.md)
+- Proper system documentation
+
+If missing, submission will be rejected.
+
+---
+
+## Review Packet Location
+
+All system documentation is available in:
+
+
+/review_packets/
+
+
+Files:
+- submission_1.md → Initial version
+- submission_2.md → Improved version
+- submission_3.md → Final system (current)
 
 ---
 
 ## Conclusion
 
-This project helped me understand how frontend and backend communicate using APIs. I also learned how to manage UI layout properly and handle errors.
+This project demonstrates:
+- Frontend-backend integration
+- API-based data flow
+- UI clarity and stability
+- Structured system documentation
 
-The main focus was to build a system that is simple, stable, and easy to use.
-
----
+The system is built to be reviewable, testable, and ready for handover.
